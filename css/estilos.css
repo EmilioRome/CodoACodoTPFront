@@ -172,7 +172,7 @@ h1, h2{
 
 /*Footer*/
 footer{
-    background-image: url(/imagenes/bg.jpg);
+    background-image: url(../imagenes/bg.jpg);
 }
 
 .ContenedorFooter{
