@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     position: sticky;
     top: 0;
@@ -25,9 +29,8 @@ header{
 #logo {
     height: 75px;
     padding: 8px;
-    
     margin: 0 10px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #logo:hover{
@@ -39,7 +42,7 @@ nav{
 }
 nav li{
     display: inline-block;
-    padding: 10px;
+    margin: 0 1vw;
     transition: 0.5s;
 }
 nav a{
@@ -48,14 +51,37 @@ nav a{
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+    font-family: "Caveat", cursive;
 }
 nav li:hover{
     transform: scale(1.2);
 }
 
+.botonContacto{
+    margin: 0 10vw;
+}
+
+.botonContacto button{
+    cursor: pointer;
+    background-color: rgb(49, 157, 220);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #e7e7e7;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.botonContacto button:hover {
+    transform: scale(1.2);
+    background-color: rgb(220, 123, 49);
+    color: #e7e7e7;
+}
+
 /*Body*/
 section[id]{
-    scroll-margin-top: 130px;
+    scroll-margin-top: 110px;
 }
 
 /*Presentacion*/
@@ -91,7 +117,7 @@ h1, h2{
 .Destinos{
     margin-top: 50px;
     padding-bottom: 30px;
-    background: linear-gradient(#FEFEFE, #888888)
+    background: linear-gradient(#FEFEFE, #888888);
 }
 .DestinosContenedor{
     margin: 30px auto;
@@ -126,7 +152,7 @@ h1, h2{
     width: 100%;
 }
 .card:hover img {
-    filter: brightness(70%);
+    filter: brightness(55%);
 }
 
 .textoCard{
