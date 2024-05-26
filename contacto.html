@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/yujuj.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4c772d101.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="contactoCuerpo">
+    <header>
+        <div class="contenedorHeader">
+            <a class="contenedorLogo" href="index.html"><img id="logo" src="imagenes/logoJ.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#Informacion">informacion</a></li>
+                    <li><a href="./index.html#Destinos">Destinos</a></li>
+                    <li><a href="./index.html#Servicios">Servicios</a></li>
+                </ul>
+            </nav>
+            <div class="navContacto">
+                <a class="botonContacto" href="contacto.html"><button>Contacto</button></a>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="formContenedor">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Dejanos tus datos!! Nos estaremos contacto a la brevedad</legend>
+    
+                    <label for="nombreapellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron">
+    
+                    <label for="correoelectronico">Correo Electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" placeholder="email@dominio.com">
+    
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" placeholder="(XX) XXXX XXXX">
+    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="8" id="mensaje" class="input-padron"></textarea>
+    
+                </fieldset>
+                
+                <fieldset class="radioFieldset">
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+    
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>¿Qué destino te llamo más la atención?</legend>
+                    
+                    <select class="selectDestino">
+                        <option value="">Destino</option>
+                        <option value="Tilcara">Tilcara</option>
+                        <option value="Maimara">Maimara</option>
+                        <option value="Purmamarca">Purmamarca</option>
+                        <option value="Humahuaca">Humahuaca</option>
+                        <option value="SanSalvadorJujuy">San Salvador de Jujuy</option>
+                        <option value="LaQuiaca">La Quiaca</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Turismo Jujuy?</label>                
+                
+                <input type="submit" value="Enviar" class="enviar">
+    
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="ContenedorFooter">
+            <img class="imgfooter" src="imagenes/footer.png" alt="logo de la municipalidad">
+            <div class="textoFoot">
+                <p>© Jujuy Turismo</p>
+                <br>
+                <p>Derechos Reservados 2024</p>
+            </div>
+            <div class="redes">
+                <p>Seguinos!</p>
+                <br>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-twitch"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

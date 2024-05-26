@@ -12,19 +12,16 @@ html{
 header{
     position: sticky;
     top: 0;
-    background-color: rgb(195, 193, 193);
+    background: linear-gradient(#FEFEFE, #888888);
     z-index: 10;
 }
 
 .contenedorHeader{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.contenedorLogo{
-    margin: 0 10vw;
-}
 
 #logo {
     height: 75px;
@@ -37,9 +34,6 @@ header{
     transform: scale(1.2);
 }
 
-nav{
-    margin: 0 5vw;
-}
 nav li{
     display: inline-block;
     margin: 0 1vw;
@@ -57,8 +51,17 @@ nav li:hover{
     transform: scale(1.2);
 }
 
+.navContacto{
+    min-width: 205px;
+}
+
+.navContacto a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .botonContacto{
-    margin: 0 10vw;
+    margin: 0 1vw;
 }
 
 .botonContacto button{
@@ -97,7 +100,7 @@ section[id]{
 
 .informacionContenedor{
     display: flow-root;
-    max-width: 750px;
+    max-width: 50%;
     margin: 20px auto;
 }
 h1, h2{
@@ -215,6 +218,7 @@ footer{
 }
 .imgfooter{
     width: 30vw;
+    max-height: 9vw;
 }
 .ContenedorFooter p{
     color: white;
@@ -224,4 +228,195 @@ footer i{
     cursor: pointer;
     padding: 0 5px;
     font-size: 1.5vw;
+}
+
+/*Comienza estilos para Destino */
+
+.cuerpoDestino{
+    background-color:antiquewhite;
+}
+
+.presentacion{
+    margin: 1vw auto 2vw;
+    width: 70%;
+    border-radius: 50px;
+    background-color: #ed9c07;
+    border-style: dotted;
+}
+
+.subtitle{
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.infoDestinos{
+    display: grid;
+    gap: 20px;
+
+}
+
+.contenidoInfoDestino{
+    margin: 0 auto;
+    padding: 2vw;
+    width: 70%;
+    border-radius: 50px;
+    background-color: rgb(0, 195, 0);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    border-style: solid;
+    transition: 0.5s ease
+}
+
+.contenidoInfoDestino:hover{
+    transform: scale(1.01);
+}
+
+.imagenContenido{
+    width: 300px;
+    height: 286px;
+}
+
+.textoContenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.contenidoInfoDestino p{
+    height: auto;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 12px;
+    height: 10%;
+    font-size: 1.5rem;
+}
+
+#segundoContenido{
+    background-color: rgb(0, 149, 255);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#tercerContenido{
+    background-color: rgb(236, 236, 55);
+}
+
+.Ubicacion{
+    padding: 3rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.Ubicacion p{
+    margin: 2rem;
+}
+
+.mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Estilos "Sobre Nosotros" */
+.cuerpoNosotros{
+    background-image: url(../imagenes/nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cuerpoNosotros h1{
+    margin: 2vw 0;
+}
+
+.contenedorNosotros{
+    width: 70%;
+    margin: 0 auto 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.contenedorNosotros h2{
+    background-color: #b0b0af;
+    border-radius: 8px 8px 0 0;
+}
+
+.contenedorNosotros p{
+    background-color: #FEFEFE;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+}
+
+/*Estilos formulario contacto*/
+.contactoCuerpo{
+    background-image: url(../imagenes/fondollama.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.formContenedor{
+    width: 40%;
+    background-color: darkblue;
+    margin: 5vw;
+    padding: 1vw 3vw;
+    border-radius: 20px;
+    display: flow-root;
+    color: orange;
+}
+
+fieldset{
+    border: none;
+}
+
+form legend {
+    font-size: 20px;
+    margin: 1vw 0;
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+.radioFieldset label{
+    display: block;
+}
+
+.input-padron{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    width: 80%;
+}
+
+.selectDestino{
+    font-size: 15px;
+}
+
+.checkbox{
+    margin:20px 0;
+    display: block;
+}
+
+.enviar{
+    padding: 8px 13px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    float: right;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
 }
