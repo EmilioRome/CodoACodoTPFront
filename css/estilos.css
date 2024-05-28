@@ -200,6 +200,10 @@ iframe {
     border: none;
 }
 
+#mapaDestino{
+    width: 100%;
+}
+
 /*Footer*/
 footer{
     background-image: url(../imagenes/bg.jpg);
