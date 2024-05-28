@@ -196,8 +196,10 @@ h1, h2{
     margin: 1rem auto 0;
 }
 
-iframe {
+#videoPublicidad {
     border: none;
+    width: 100%;
+    height: 315px;
 }
 
 #mapaDestino{
@@ -514,6 +516,16 @@ form span{
 
     .imagenHospedaje{
         margin: 0;
+    }
+
+    .videoJujuy {
+        width: 80%;
+        margin: 1rem auto 0;
+    }
+    
+    #videoPublicidad {
+        width: 100%;
+        height: 200px;
     }
 
     /*Pagina Destinos*/
