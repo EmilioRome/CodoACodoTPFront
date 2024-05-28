@@ -383,13 +383,28 @@ form label{
     margin-bottom: 10px;
 }
 
+form span{
+    display: block;
+}
+
+.campoObligatorio{
+    margin-bottom: 20px;
+}
+
+.textoError{
+    color: red;
+}
+
+.error input,.error select{
+    border: 3px solid red;
+}
+
 .radioFieldset label{
     display: block;
 }
 
 .input-padron{
     display: block;
-    margin-bottom: 20px;
     padding: 10px 5px;
     width: 80%;
 }
@@ -419,4 +434,103 @@ form label{
 .enviar:hover{
     background: darkorange;
     transform: scale(1.2);
+}
+
+/*comportamiento para otros dispositivos*/
+@media (max-width: 1024px) {
+
+    .informacionContenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenidoInfoDestino{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .imagenContenido{
+        margin: 0 auto;
+    }
+
+    #segundoContenido{
+        display: grid;
+    }
+
+    .Ubicacion, .mapa{
+        width: 100%;
+    }
+
+    .formContenedor{
+        margin: 7vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    nav{
+        display: none;
+    }
+
+    #logo{
+        margin: 0;
+    }
+
+    .navContacto{
+        min-width: unset;
+    }
+
+    #linkNosotros{
+        display: none;
+    }
+
+    .formContenedor{
+        width: 90%;
+    }
+
+    /*Index*/
+
+    .informacionContenedor{
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+    }
+
+    .DestinosContenedor{
+        grid-template-columns: 1fr;
+    }
+
+    .contenedorServicios{
+        flex-direction: column;
+        gap: 1vw;
+        align-items: center;
+    }
+
+    .imagenHospedaje{
+        margin: 0;
+    }
+
+    /*Pagina Destinos*/
+    .contenidoInfoDestino{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .imagenContenido{
+        margin: 0 auto;
+    }
+
+    #segundoContenido{
+        display: grid;
+    }
+
+    .Ubicacion, .mapa{
+        width: 100%;
+    }
+
+    /*Footer*/
+    .ContenedorFooter{
+        width: 100%;
+    }
 }
